@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>STTP | Personnels</title>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Roboto:400,500,700" rel="stylesheet">
+	<!-- Bootstrap 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+	<!-- Le strict minimum de CSS perso : ce que Bootstrap ne fournit pas nativement
+       (images de fond, effet de survol sur les vignettes) -->
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		.navbar-brand {
+			font-family: 'Montserrat', sans-serif;
+			font-weight: 700;
+		}
+
+		.bg-image-cover {
+			background-size: cover;
+			background-position: center;
+		}
+
+		.bd-green {
+			border: 2px solid #198754;
+		}
+
+		.hero-slide {
+			min-height: 520px;
+		}
+
+		.hover-overlay {
+			opacity: 0;
+			transition: opacity .3s ease;
+		}
+
+		.hover-target:hover .hover-overlay {
+			opacity: 1;
+		}
+
+		.testimonial-avatar {
+			margin-top: -45px;
+			object-fit: cover;
+		}
+
+		/* Hauteur d'image uniforme pour que les cards d'une même rangée soient proportionnelles */
+		.card-img-top {
+			height: 220px;
+			object-fit: cover;
+		}
+
+		.cover-img {
+			height: 260px;
+			object-fit: cover;
+		}
+
+		.card-body {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.card-body a {
+			margin-top: auto;
+		}
+
+		.testimonial-box {
+			height: 180px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		/* Forcer le thème vert/gris sur les composants qui utilisent le bleu Bootstrap par défaut */
+		.nav-pills .nav-link.active {
+			background-color: #198754;
+		}
+
+		.accordion-button:not(.collapsed) {
+			background-color: rgba(25, 135, 84, .1);
+			color: #198754;
+			box-shadow: inset 0 -1px 0 rgba(25, 135, 84, .2);
+		}
+
+		.accordion-button:focus,
+		.form-control:focus {
+			border-color: #198754;
+			box-shadow: 0 0 0 .25rem rgba(25, 135, 84, .25);
+		}
+	</style>
+</head>
+
+<body>
+
+	<!-- ============ NAVBAR ============ -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top shadow-sm py-3">
+		<div class="container">
+			<a class="navbar-brand fs-3" href="index.html">STTP</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link px-3 py-2 mx-1" href="index.html">Acceuil</a></li>
+					<li class="nav-item"><a class="nav-link px-3 py-2 mx-1" href="services.html">Services</a></li>
+					<li class="nav-item"><a class="nav-link px-3 py-2 mx-1" href="projects.html">Projets</a></li>
+					<li class="nav-item"><a class="nav-link active bg-dark rounded px-3 py-2 mx-1"
+							href="team.html">Personnels</a>
+					</li>
+					<li class="nav-item"><a class="nav-link px-3 py-2 mx-1" href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- ============ PAGE BANNER ============ -->
+	<section class="py-5 bg-secondary text-white text-center bg-image-cover position-relative"
+		style="background-image:url('assets/img/bg/team.avif');">
+		<div class="position-absolute top-0 start-0 w-100 h-100 bg-secondary bg-opacity-75"></div>
+		<div class="container position-relative">
+			<p class="text-uppercase small mb-2">Services de topologie et de traveaux publics</p>
+			<h2 class="mb-3">Notre Équipe</h2>
+			<nav aria-label="breadcrumb">
+				<ol class="breadcrumb justify-content-center mb-0">
+					<li class="breadcrumb-item"><a href="index.html" class="text-white text-decoration-none">Acceuil</a>
+					</li>
+					<li class="breadcrumb-item active text-white-50" aria-current="page">Personnels</li>
+				</ol>
+			</nav>
+		</div>
+	</section>
+
+	<!-- ============ TEAM GRID ============ -->
+	<section class="py-5">
+		<div class="container">
+			<div class="row g-4 text-center">
+
+				<div class=" col-6 col-md-3">
+					<div class="bd-green position-relative overflow-hidden rounded hover-target">
+						<img src="assets/img/team/perso5.webp" class="img-fluid w-100 cover-img" alt="">
+						<div
+							class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center gap-3 hover-overlay">
+							<a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-google"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+						</div>
+					</div>
+					<h5 class="mt-3 mb-0">Fode Moussa SOUMAH</h5>
+					<p class="text-muted">Directeur</p>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="bd-green position-relative overflow-hidden rounded hover-target">
+						<img src="assets/img/team/perso3.webp" class="img-fluid w-100 cover-img" alt="">
+						<div
+							class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center gap-3 hover-overlay">
+							<a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-google"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+						</div>
+					</div>
+					<h5 class="mt-3 mb-0">Aminata CAMARA</h5>
+					<p class="text-muted">Assistante de direction</p>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="bd-green position-relative overflow-hidden rounded hover-target">
+						<img src="assets/img/team/perso4.webp" class="img-fluid w-100 cover-img" alt="">
+						<div
+							class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center gap-3 hover-overlay">
+							<a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-google"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+						</div>
+					</div>
+					<h5 class="mt-3 mb-0">Aboubacar Bangoura</h5>
+					<p class="text-muted">Chef de projet</p>
+				</div>
+				<div class="col-6 col-md-3">
+					<div class="bd-green position-relative overflow-hidden rounded hover-target">
+						<img src="assets/img/team/perso2.webp" class="img-fluid w-100 cover-img" alt="">
+						<div
+							class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center gap-3 hover-overlay">
+							<a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-google"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+						</div>
+					</div>
+					<h5 class="mt-3 mb-0">Ibrahima Diallo</h5>
+					<p class="text-muted">Ingénieur</p>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="bd-green position-relative overflow-hidden rounded hover-target">
+						<img src="assets/img/team/perso5.jpg" class="img-fluid w-100 cover-img" alt="">
+						<div
+							class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center gap-3 hover-overlay">
+							<a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-google"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+						</div>
+					</div>
+					<h5 class="mt-3 mb-0">Abdoulaye DIALLO</h5>
+					<p class="text-muted">Stagiare</p>
+				</div>
+
+				<div class="col-6 col-md-3">
+					<div class="bd-green position-relative overflow-hidden rounded hover-target">
+						<img src="assets/img/team/perso6.jpg" class="img-fluid w-100 cover-img" alt="">
+						<div
+							class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75 d-flex justify-content-center align-items-center gap-3 hover-overlay">
+							<a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-google"></i></a>
+							<a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+						</div>
+					</div>
+					<h5 class="mt-3 mb-0">Aïssatou DIALLO</h5>
+					<p class="text-muted">Stagiare</p>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<footer class="mt-5 pt-5 pb-4 bg-dark text-white bg-image-cover position-relative"
+		style="background-image:url('assets/img/bg/bg3.avif');">
+		<div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-75"></div>
+
+		<div class="container position-relative">
+			<div class="row g-4">
+
+				<!-- Col 1 : À propos -->
+				<div class="col-md-4">
+					<h5 class="mb-3">À propos</h5>
+					<p class="text-white-50 small">
+						Services de topologie et de travaux publics au service de vos projets,
+						de l'étude jusqu'à la réalisation.
+					</p>
+					<div class="d-flex gap-3 mt-3">
+						<a href="#" class="text-white"><i class="bi bi-facebook"></i></a>
+						<a href="#" class="text-white"><i class="bi bi-instagram"></i></a>
+						<a href="#" class="text-white"><i class="bi bi-linkedin"></i></a>
+					</div>
+				</div>
+
+				<!-- Col 2 : Liens rapides -->
+				<div class="col-md-4">
+					<h5 class="mb-3">Liens rapides</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Acceuil</a>
+						</li>
+						<li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none">Services</a>
+						</li>
+						<li class="mb-2"><a href="projets.html" class="text-white-50 text-decoration-none">Projets</a>
+						</li>
+						<li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- Col 3 : Contact -->
+				<div class="col-md-4">
+					<h5 class="mb-3">Contact</h5>
+					<ul class="list-unstyled text-white-50 small">
+						<li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Yimbaya, C/Matoto, Conakry, Guinée</li>
+						<li class="mb-2"><i class="bi bi-telephone me-2"></i>+224 664 21 05 51 / +224 655 65 52 54</li>
+						<li class="mb-2"><i class="bi bi-envelope me-2"></i>contact@monsite.com</li>
+					</ul>
+				</div>
+
+			</div>
+
+			<hr class="border-white-50 mt-4">
+
+			<p class="text-center text-white-50 small mb-0">
+				&copy; 2026 STTP. Tous droits réservés - Réalisé par COLENT.
+			</p>
+		</div>
+	</footer>
+
+
+	<!-- Bootstrap Bundle JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
